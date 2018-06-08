@@ -35,7 +35,6 @@ namespace split_image
                 cropY(image, ref heights).Save(j.ToString() + ".bmp");
                 j++;
             }
-            Console.WriteLine(j);
 
             for (int i = 0; i < j; i++)
             {
@@ -64,9 +63,8 @@ namespace split_image
                 img.Dispose();
 
             }
-            for (int i = 0; i < j; i++)
+            for (int i = 0; i < k; i++)
             {
-                
                 File.Delete(i.ToString() + ".bmp");
             }
         }
